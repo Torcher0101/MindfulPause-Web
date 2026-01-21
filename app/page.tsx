@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Download, Shield, Zap, Moon, ChevronRight, Globe } from 'lucide-react';
 
@@ -15,7 +16,7 @@ const content = {
     },
     hero: {
       title: 'Reclaim Your Time with Intentionality',
-      subtitle: 'Mindful Pause helps you break free from mindless scrolling by introducing a conscious pause before you open distracting apps.',
+      subtitle: 'Roving AI helps you break free from mindless scrolling by introducing a conscious pause before you open distracting apps.',
       cta: 'Download on App Store',
     },
     features: [
@@ -36,7 +37,7 @@ const content = {
       },
     ],
     footer: {
-      copyright: '© 2024 Mindful Pause. All rights reserved.',
+      copyright: '© 2026 Roving AI / LuvinAI. All rights reserved.',
     }
   },
   zh: {
@@ -47,7 +48,7 @@ const content = {
     },
     hero: {
       title: '找回專注，拒絕無意識滑手機',
-      subtitle: 'Mindful Pause 在您開啟 App 前加入一個「有意識的暫停」，幫助您打破數位成癮的迴圈。',
+      subtitle: 'Roving AI 在您開啟 App 前加入一個「有意識的暫停」，幫助您打破數位成癮的迴圈。',
       cta: 'App Store 下載',
     },
     features: [
@@ -68,7 +69,7 @@ const content = {
       },
     ],
     footer: {
-      copyright: '© 2024 Mindful Pause. All rights reserved.',
+      copyright: '© 2026 Roving AI / LuvinAI. All rights reserved.',
     }
   }
 };
@@ -84,7 +85,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-gradient-to-tr from-primary to-secondary rounded-lg" />
-            <span className="text-xl font-bold tracking-tight">Mindful Pause</span>
+            <span className="text-xl font-bold tracking-tight">Roving AI</span>
           </div>
 
           <div className="flex items-center gap-6">
@@ -188,9 +189,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-muted text-sm">{t.footer.copyright}</p>
           <div className="flex gap-6 text-sm text-muted">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Contact</a>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+            <a href="mailto:torcher0101@gmail.com" className="hover:text-white transition-colors">Contact</a>
           </div>
         </div>
       </footer>
